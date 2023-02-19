@@ -43,7 +43,6 @@ export default function FetchImage(props) {
                 random: strImage
             }))
 
-            // newurl = strImage
         }
         getImage();
 
@@ -59,9 +58,9 @@ export default function FetchImage(props) {
             </h2>
 
 
-            {/* <form> */}
-
+            <label htmlFor="width">Enter width : </label>
             <input
+                id="width"
                 type="number"
                 className="form--input"
                 placeholder="Enter width"
@@ -73,6 +72,7 @@ export default function FetchImage(props) {
             <br />
             <br />
 
+            <label htmlFor="height">Enter height : </label>
             <input
                 type="number"
                 className="form--input"
@@ -89,8 +89,6 @@ export default function FetchImage(props) {
                 className="button"
                 onClick={handleClick}
             >Get Image</button>
-
-            {/* </form> */}
 
 
             <br />
